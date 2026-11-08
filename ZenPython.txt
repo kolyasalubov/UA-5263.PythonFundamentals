@@ -13,7 +13,7 @@ Zen
 12. marik4real
 13. kyrylopr
 14. vktortern
-15. TarasChulii
+15. Errors should never pass silently, unless explicitly silenced.
 16. AlexShevchenk
 17. MartaLutsiuk
 18. VolodymyrKytaihora
