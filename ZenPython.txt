@@ -19,7 +19,7 @@ Zen
 18. VolodymyrKytaihora
 19. Blacka4ka
 20. Vitaliy Zhyryk
-21. markolutchihsun
+21. Explicit is better than implicit.
 22.
 23.
 24.
