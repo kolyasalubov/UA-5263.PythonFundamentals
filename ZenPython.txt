@@ -6,7 +6,7 @@ Zen
 5. Flat is better than nested.
 6. TheAnnaLogic
 7. maralov
-8. Moreman6
+8. Special cases aren't special enough to break the rules.
 9. Readability counts
 10. HannaDatsenko
 11. t0rias
@@ -19,10 +19,10 @@ Zen
 18. VolodymyrKytaihora
 19. Blacka4ka
 20. Beautiful is better than ugly.
-21. markolutchihsun
+21. Explicit is better than implicit.
 22. lutskiyLiubomyr
-23.
-24.
+23. Daniello210
+24. KozakevychSolomia
 25.
 26.
 27.
