@@ -1,0 +1,7 @@
+def solution(number):
+    return sum(i for i in range(number) if i % 3 == 0 or i % 5 == 0) 
+
+print(solution(10))
+print(solution(20))
+print(solution(30))
+print(solution(40))
