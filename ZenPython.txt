@@ -3,7 +3,7 @@ Zen
 2. Explicit is better than implicit.
 3. Roksolanabt
 4. Complex is better than complicated.
-5. Podogreff
+5. Flat is better than nested.
 6. TheAnnaLogic
 7. maralov
 8. Special cases aren't special enough to break the rules.
