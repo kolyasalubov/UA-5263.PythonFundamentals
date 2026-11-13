@@ -3,13 +3,13 @@ Zen
 2. Explicit is better than implicit.
 3. Roksolanabt
 4. Complex is better than complicated.
-5. Podogreff
+5. Flat is better than nested.
 6. TheAnnaLogic
 7. maralov
-8. Moreman6
+8. Special cases aren't special enough to break the rules.
 9. Readability counts
 10. HannaDatsenko
-11. t0rias
+11. Unless explicitly silenced.
 12. marik4real
 13. kyrylopr
 14. vktortern
@@ -18,11 +18,11 @@ Zen
 17. MartaLutsiuk
 18. VolodymyrKytaihora
 19. Blacka4ka
-20. Vitaliy Zhyryk
-21. markolutchihsun
+20. Beautiful is better than ugly.
+21. Explicit is better than implicit.
 22. lutskiyLiubomyr
-23.
-24.
+23. Daniello210
+24. KozakevychSolomia
 25.
 26.
 27.
