@@ -9,7 +9,7 @@ Zen
 8. Special cases aren't special enough to break the rules.
 9. Readability counts
 10. HannaDatsenko
-11. t0rias
+11. Unless explicitly silenced.
 12. marik4real
 13. kyrylopr
 14. vktortern
