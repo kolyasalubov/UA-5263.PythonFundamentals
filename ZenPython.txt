@@ -15,7 +15,7 @@ Zen
 14. vktortern
 15. TarasChulii
 16. Beautiful is better than ugly.
-17. MartaLutsiuk
+17. If the implementation is hard to explain, it's a bad idea.
 18. VolodymyrKytaihora
 19. Blacka4ka
 20. Beautiful is better than ugly.
