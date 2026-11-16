@@ -1,3 +1,5 @@
-from collections import Counter
 def count_chars(text):
-    return dict(Counter(text))
+    result = {}
+    for char in text:
+        result[char] = result.get(char, 0) + 1
+    return result

@@ -21,3 +21,5 @@ elif choice == "triangle":
 elif choice == "circle":
     r = float(input("Radius: "))
     print(get_circle_area(r))
+else:
+    print("Unknown shape. Please choose rectangle, triangle, or circle.")

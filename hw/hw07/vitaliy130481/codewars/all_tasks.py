@@ -28,7 +28,7 @@ def solution(number):
   
   
   
-  def zero_fuel(distance_to_pump, mpg, fuel_left):
+def zero_fuel(distance_to_pump, mpg, fuel_left):
     return (fuel_left * mpg >=distance_to_pump)
 
 
@@ -46,7 +46,7 @@ def count_sheeps(sheep):
  
 
 
-def correct_tail(body, tail):
+def correct_tail_1(body, tail):
     sub = body[len(body)-len(tail):]
     if sub == tail:
         return True
@@ -54,5 +54,5 @@ def correct_tail(body, tail):
         return False
     
 #better solution
-def correct_tail(body, tail):
+def correct_tail_2(body, tail):
     return body.endswith(tail)
