@@ -6,6 +6,7 @@ def count_characters(text):
         else:
             result[char] = 1
     return result
+
+
 input_str = "hello"
 print(count_characters(input_str))
-
