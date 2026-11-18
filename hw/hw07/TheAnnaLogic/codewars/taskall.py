@@ -66,7 +66,7 @@ def are_you_playing_banjo(name):
 
 # Task 10: Convert boolean values to strings 'Yes' or 'No'   
 def bool_to_word(boolean):
-    if boolean == True:
+    if boolean:
         return "Yes"
     else:
         return "No"
@@ -76,7 +76,7 @@ def bool_to_word(boolean):
 def count_sheeps(sheep):
     count = 0
     for item in sheep:
-        if item == True:
+        if item:
             count += 1
     return count
 
@@ -88,3 +88,4 @@ def correct_tail(body, tail):
         return True
     else:
         return False
+    
