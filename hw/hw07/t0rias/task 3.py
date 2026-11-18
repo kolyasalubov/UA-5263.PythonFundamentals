@@ -17,3 +17,6 @@ def count_chars(text):
     return result
 
 print(count_chars("hello"))
+print(count_chars(""))
+print(count_chars("ellegance"))
+print(count_chars("1111888889923"))

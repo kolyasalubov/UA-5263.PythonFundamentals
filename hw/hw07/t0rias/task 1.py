@@ -6,7 +6,7 @@ def largest(a, b):
         a (int | float): First number
         b (int | float): Second number
 
-        Returns:
+    Returns:
         int | float: The larger of a and b.
     """
     if a > b:
@@ -16,4 +16,3 @@ def largest(a, b):
 first = float(input("Enter the first number: "))
 second = float(input("Enter the second number: "))
 print("The largest number is: ", largest(first, second))
-print(largest.__doc__)

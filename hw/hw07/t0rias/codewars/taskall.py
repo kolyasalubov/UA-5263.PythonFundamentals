@@ -22,15 +22,15 @@ def number_to_string(num: int) -> str:
 
 #V. Reversing Words in a String
 def reverse(st: str) -> str:
-    def reverse_words(words: list[str]) -> list[str]:
-        if len(words) <= 1:
-            return words
-        return reverse_words(words[1:]) + [words[0]]
-    return " ".join(reverse_words(st.split()))
+    words = st.split()
+    reversed_words = []
+    for word in words:
+        reversed_words.insert(0, word)
+    return " ".join(reversed_words)
 
 #VI. Reverse List Order
-def reverse_list(l):
-  return l[::-1]
+def reverse_list(items):
+    return items[::-1]
 
 #VII. Multiples of 3 or 5
 def solution(number):
