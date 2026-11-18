@@ -3,7 +3,7 @@ import re
 
 def validation_password(password: str):
     if len(password) < 6:
-        return f"The length of password should be more than 6 characters."
+        return f"The length of password should be 6 or more characters."
 
     if len(password) > 16:
         return f"The length of password should be less than 16 characters."
