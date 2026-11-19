@@ -1,7 +1,10 @@
-def calc_letters(input : str) -> dir:
+def calc_letters(input : str) -> dict:
     res = {}
     for idx in range(len(input)):
-        res[input[idx]] = idx
+        try:
+            res[input[idx]] = res[input[idx]] + 1
+        except KeyError:
+            res[input[idx]] = 1
     return res
 
 val = input()

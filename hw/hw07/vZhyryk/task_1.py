@@ -9,4 +9,4 @@ def get_max(a, b):
     Returns:
         The greater of `a` and `b`.
     """
-    return max(a,b)
+    return max(a, b)
