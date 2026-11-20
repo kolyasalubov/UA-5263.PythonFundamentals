@@ -1,4 +1,4 @@
-import module
+import areas
 
 
 def main() -> None:
@@ -7,14 +7,14 @@ def main() -> None:
     if shape == "rectangle":
         a = float(input("Side a: "))
         b = float(input("Side b: "))
-        area = module.calc_rectangle_area(a, b)
+        area = areas.calc_rectangle_area(a, b)
     elif shape == "triangle":
         height = float(input("Height: "))
         base = float(input("Base: "))
-        area = module.calc_triangle_area(height, base)
+        area = areas.calc_triangle_area(height, base)
     elif shape == "circle":
         radius = float(input("Radius: "))
-        area = module.calc_circle_area(radius)
+        area = areas.calc_circle_area(radius)
     else:
         print("Unknown shape. Choose rectangle, triangle, or circle.")
         return
