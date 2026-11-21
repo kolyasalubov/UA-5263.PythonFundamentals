@@ -1,6 +1,13 @@
 import tkinter as tk
 from tkinter import font
 
+from pyowm.commons.exceptions import (
+    APIRequestError,
+    APIResponseError,
+    NotFoundError,
+    UnauthorizedError,
+)
+
 from OWM import get_weather
 
 HEIGHT = 350
@@ -40,10 +47,22 @@ label = tk.Label(lower_frame, font=('Courier', 12), anchor='nw', justify='left')
 label.place(relx=0, rely=0, relwidth=1, relheight=1)
 
 def handleSearch():
+    city = entry_field.get().strip()
+    if not city:
+        label.config(text="Enter a city name")
+        return
     try:
-        res = get_weather(entry_field.get())
-    except Exception as e:
-        res = f"Error: {e}"
+        res = get_weather(city)
+    except RuntimeError as e:
+        res = str(e)
+    except NotFoundError:
+        res = f"City not found: {city}"
+    except UnauthorizedError:
+        res = "Invalid API key"
+    except APIRequestError:
+        res = "Network error. Check your connection"
+    except APIResponseError as e:
+        res = f"Weather service error: {e}"
     label.config(text=res)
 
 

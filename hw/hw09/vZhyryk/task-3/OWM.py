@@ -1,15 +1,13 @@
+import os
+
 from pyowm import OWM
 
 
-API_KEY = 'ef2206ff5da67de63306d0b143e20872'
-# ---------- FREE API KEY examples ---------------------
-
-
-
-# Search for current weather in London (Great Britain) and get details
-
 def get_weather(searchVal: str) -> str:
-    owm = OWM(API_KEY)
+    api_key = os.environ.get("vZhyryk_OWM_API_KEY")
+    if not api_key:
+        raise RuntimeError("Set the OWM_API_KEY environment variable")
+    owm = OWM(api_key)
     mgr = owm.weather_manager()
     observation = mgr.weather_at_place(searchVal)
     w = observation.weather

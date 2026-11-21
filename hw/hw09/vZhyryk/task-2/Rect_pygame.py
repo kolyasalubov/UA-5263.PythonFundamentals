@@ -26,29 +26,25 @@ run = True
 clock = pygame.time.Clock()
 
 while run:
-    pygame.time.delay(100)
-
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             run = False
 
     keys = pygame.key.get_pressed()
-
+    max_x = gameDisplay.get_width() - WIDTH_RECTANGLE
+    max_y = gameDisplay.get_height() - HEIGHT_RECTANGLE
 
     if keys[pygame.K_LEFT]:
-        if keys[pygame.K_LEFT] and COORD_X > DELTA_STEP:
-                COORD_X = COORD_X-DELTA_STEP
+        COORD_X -= DELTA_STEP
     if keys[pygame.K_RIGHT]:
-        if keys[pygame.K_RIGHT] and COORD_X < WIDTH_DISPLAY - WIDTH_RECTANGLE - DELTA_STEP:
-            COORD_X = COORD_X+DELTA_STEP
+        COORD_X += DELTA_STEP
     if keys[pygame.K_UP]:
-        if keys[pygame.K_UP] and COORD_Y > DELTA_STEP:
-            COORD_Y = COORD_Y-DELTA_STEP
+        COORD_Y -= DELTA_STEP
     if keys[pygame.K_DOWN]:
-        if keys[pygame.K_DOWN] and COORD_Y < HEIGHT_DISPLAY - HEIGHT_RECTANGLE - DELTA_STEP:
-            COORD_Y = COORD_Y+DELTA_STEP
+        COORD_Y += DELTA_STEP
 
-
+    COORD_X = max(0, min(COORD_X, max_x))
+    COORD_Y = max(0, min(COORD_Y, max_y))
 
     gameDisplay.fill(BLACK_COLOR)
 
