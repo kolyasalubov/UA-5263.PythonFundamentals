@@ -26,7 +26,7 @@ def play_guess_number(min_value: int = 1, max_value: int = 100, max_attempts: in
 		else:
 			print("Загадане число менше за твоє.")
 
-	print(f"На жаль, спроби закінчилися! Я загадав число {secret_number}.")
+	print(f" Спроби закінчилися! Я загадав число {secret_number}.")
 
 
 if __name__ == "__main__":
