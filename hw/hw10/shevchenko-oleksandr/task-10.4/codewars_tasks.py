@@ -5,7 +5,11 @@ import re
 
 class Ball:
     def __init__(self, ball_type="regular"):
-        self.ballType = ball_type
+        self.ball_type = ball_type
+
+    @property
+    def ballType(self):
+        return self.ball_type
 
 
 class Ghost:

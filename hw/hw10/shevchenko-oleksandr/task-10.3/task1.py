@@ -9,9 +9,13 @@ class Polygon:
 
 class Rectangle(Polygon):
     def __init__(self, length, width):
+        length = float(length)
+        width = float(width)
+        if length <= 0 or width <= 0:
+            raise ValueError("Rectangle sides must be positive numbers.")
         super().__init__(length, width, length, width)
-        self.length = float(length)
-        self.width = float(width)
+        self.length = length
+        self.width = width
 
     def area(self):
         return self.length * self.width
