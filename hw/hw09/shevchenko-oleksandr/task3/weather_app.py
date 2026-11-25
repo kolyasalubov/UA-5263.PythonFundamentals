@@ -3,12 +3,17 @@ import tkinter as tk
 from tkinter import ttk
 
 from pyowm import OWM
+from pyowm.commons.exceptions import PyOWMError
+
+
+class MissingAPIKeyError(Exception):
+    pass
 
 
 def get_weather(city):
     api_key = os.getenv("OWM_API_KEY")
     if not api_key:
-        raise RuntimeError("Set the OWM_API_KEY environment variable first.")
+        raise MissingAPIKeyError("Set the OWM_API_KEY environment variable first.")
 
     weather_manager = OWM(api_key).weather_manager()
     weather = weather_manager.weather_at_place(city).weather
@@ -46,7 +51,7 @@ def main():
 
         try:
             result_label.config(text=get_weather(city))
-        except Exception as error:
+        except (MissingAPIKeyError, PyOWMError) as error:
             result_label.config(text=f"Unable to get weather: {error}")
 
     ttk.Button(root, text="Get Weather", command=show_weather).pack(pady=(0, 20))
