@@ -4,10 +4,10 @@ class Employee:
     def __init__(self, name, salary):
         self.name = name
         self.salary = salary
-        Employee.count += 1
+        self.__class__.count += 1
 
     def display_count(self):
-        print(f"Total employees: {Employee.count}")
+        print(f"Total employees: {self.__class__.count}")
 
     def display_employee(self):
         print(f"{self.name} has salary: {self.salary}")

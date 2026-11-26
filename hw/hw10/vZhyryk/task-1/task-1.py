@@ -15,14 +15,14 @@ class Rectangle(Polygon):
         if len(sides) != 4:
             raise ValueError("This is not rectangle")
 
-        self.checkSides()
+        self.check_sides()
 
-    def checkSides(self):
+    def check_sides(self):
         if sorted(Counter(self.sides).values()) not in ([2, 2], [4]):
             raise ValueError("This is not rectangle")
 
-    def findSquare(self):
+    def find_square(self):
         return max(self.sides) * min(self.sides)
 
 
-print(Rectangle([10, 5, 10, 5]).findSquare())
+print(Rectangle([10, 5, 10, 5]).find_square())
