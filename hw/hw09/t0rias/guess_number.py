@@ -3,8 +3,9 @@ from random import randint
 MIN_NUMBER = 1
 MAX_NUMBER = 100
 MAX_ATTEMPTS = 10
-"""Ask the user for a number until a valid value in range is entered."""
+
 def read_guess(attempt):
+    """Ask the user for a number until a valid value in range is entered."""
     while True:
         try:
             guess = int(input(f"Attempt {attempt}/{MAX_ATTEMPTS}. Your guess: "))

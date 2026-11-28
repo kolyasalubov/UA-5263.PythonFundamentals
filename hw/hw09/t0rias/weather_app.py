@@ -23,21 +23,23 @@ owm = OWM(API_KEY)
 mgr = owm.weather_manager()
 
 
-"""Return the first font family installed in the system."""
+
 def pick_font(*names):
+    """Return the first font family installed in the system."""
     installed = set(tkfont.families())
     return next((name for name in names if name in installed), 'TkDefaultFont')
 
-"""Show a single message in the card and clear weather fields."""
+
 def show_message(text, color=MUTED):
+    """Show a single message in the card and clear weather fields."""
     city_label.config(text='')
     temp_label.config(text='')
     status_label.config(text=text, fg=color)
     details_label.config(text='')
 
-"""Get current weather for the city from the entry field and show it in the card."""
-def get_weather(event=None):
 
+def get_weather(event=None):
+    """Get current weather for the city from the entry field and show it in the card."""
     city = entry_field.get().strip()
     if not city:
         show_message('Enter a city name')
